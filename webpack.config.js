@@ -10,8 +10,10 @@ module.exports = {
     },
     devServer: {
         contentBase: './dist',
+        index: 'index.html',
     },
     plugins: [new HtmlWebpackPlugin({
-        inject: "body"
+        inject: "body",
+        template: './dist/index.html'
     })],
 };
